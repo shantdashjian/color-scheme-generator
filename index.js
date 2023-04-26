@@ -9,8 +9,8 @@ renderModes()
 generateColorScheme()
 
 function renderModes() {
-		modeSelector.innerHTML = modes.map(mode =>
-			`<option value="${mode}">${mode}</option>`).join('')
+	modeSelector.innerHTML = modes.map(mode =>
+		`<option value="${mode}">${mode}</option>`).join('')
 }
 
 getColorSchemeBtn.addEventListener('click', generateColorScheme)
@@ -43,6 +43,6 @@ function generateColorScheme() {
  by the onclick attribute. This is because I made index.js of type="module" which
  puts all its functions in a separate scope of their own, and not in the global scope.
  */
-window.copyColorHexValue = function(colorHexValue) {
+window.copyColorHexValue = function (colorHexValue) {
 	navigator.clipboard.writeText(colorHexValue)
 }

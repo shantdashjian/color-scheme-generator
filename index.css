@@ -1,85 +1,85 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
 }
 
 .flex {
-    display: flex;
+	display: flex;
 }
 
 .container {
-    flex-direction: column;
-    width: 550px;
-    height: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid;
-    margin-top: 10px;
+	flex-direction: column;
+	width: 550px;
+	height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid;
+	margin-top: 10px;
 }
 
 header {
-    height: 90px;
-    border: 1px solid;
-    padding: 24px 19px;
-    background: #1F2937;
-    justify-content: space-between;
+	height: 90px;
+	border: 1px solid;
+	padding: 24px 19px;
+	background: #1F2937;
+	justify-content: space-between;
 }
 
 .color-picker {
-    width: 3.4rem;
-    height: 100%;
+	width: 3.4rem;
+	height: 100%;
 }
 
 .mode-selector {
-    width: 19.5rem;
-    padding: 5px;
-    color: #D1D5DB;
-    background-color: #1F293A;
+	width: 19.5rem;
+	padding: 5px;
+	color: #D1D5DB;
+	background-color: #1F293A;
 }
 
 button {
-    width: 7.6rem;
-    border: none;
-    font-size: 0.75rem;
-    color: #FFFFFF;
-    background-color: #3D4B60;
+	width: 7.6rem;
+	border: none;
+	font-size: 0.75rem;
+	color: #FFFFFF;
+	background-color: #3D4B60;
 }
 
 .mode-selector, button {
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .capitalize {
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 main {
-    flex-direction: row;
-    justify-content: stretch;
-    height: 100%;
+	flex-direction: row;
+	justify-content: stretch;
+	height: 100%;
 }
 
 .color-block {
-    flex-direction: column;
-    width: 100%;
+	flex-direction: column;
+	width: 100%;
 }
 
 .color {
-    height: 90%;
+	height: 90%;
 }
 
 .color-value {
-    flex-direction: column;
-    justify-content: center;
-    height: 10%;
-    background: #1F2937;
-    color: #D5D4D8;
-    text-align: center;
-    font-weight: 500;
-    font-size: 0.75em;
+	flex-direction: column;
+	justify-content: center;
+	height: 10%;
+	background: #1F2937;
+	color: #D5D4D8;
+	text-align: center;
+	font-weight: 500;
+	font-size: 0.75em;
 }
