@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <title>Color Scheme Generator</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,11 +12,14 @@
 <body>
 <div class="container flex">
   <header class="flex">
-    <input type="color" class="color-picker" id="color-picker">
-    <select class="mode-selector capitalize" id="mode-selector"></select>
-    <button id="get-color-scheme-btn">Get color scheme</button>
+    <input type="color" class="color-picker" id="color-picker" aria-label="color picker">
+    <select class="mode-selector capitalize" id="mode-selector" aria-label="mode selector">
+      <!-- modes rendered in JavaScript-->
+    </select>
+    <button id="get-color-scheme-btn" aria-label="get color scheme button">Get color scheme</button>
   </header>
   <main class="flex" id="color-scheme">
+    <!-- color scheme rendered in JavaScript-->
   </main>
 </div>
 <script src="index.js" type="module"></script>

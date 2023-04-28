@@ -26,7 +26,11 @@ function generateColorScheme() {
 			colorScheme.innerHTML = data.colors.map(color => {
 				const colorHexValue = color.hex.value
 				return `
-					<div class="color-block flex" onclick="copyColorHexValue('${colorHexValue}')">
+					<div class="color-block flex" 
+								onclick="copyColorHexValue(event, '${colorHexValue}')"
+								title="Click to copy color hex value to clipboard"
+								aria-label="${colorHexValue} click to copy to clipboard"
+								>
 						<div class="color" style="background-color: ${colorHexValue}">
 						</div>
 						<div class="color-value flex">
@@ -43,6 +47,9 @@ function generateColorScheme() {
  by the onclick attribute. This is because I made index.js of type="module" which
  puts all its functions in a separate scope of their own, and not in the global scope.
  */
-window.copyColorHexValue = function (colorHexValue) {
+window.copyColorHexValue = function (event, colorHexValue) {
+	const backgroundColor = event.target.style.backgroundColor
+	event.target.style.backgroundColor = "gold"
+	setTimeout(() => event.target.style.backgroundColor = backgroundColor, 1000)
 	navigator.clipboard.writeText(colorHexValue)
 }
